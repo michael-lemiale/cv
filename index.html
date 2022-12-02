@@ -3,49 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My personal site">
+    <meta name="description" content="My personal CV site">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./favicon.ico">
     <title>Michael Lemiale</title>
 </head>
 <body>
-    <img src="./images/michael-lemiale.jpeg" alt="michael lemiale profile picture">
-    <h1>Michael Lemiale</h1>
-    <p><em>Data Practitioner</em></p>
-    <p>Bio</p>
-    <a href="./contact_me.html">Contact Me</a>
-    <a href="https://www.linkedin.com/in/michael-lemiale-85a61057/">Linkedin</a>
-    <hr>
-    <h2>Professional Experience</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2018-2022</td>
-                <td>Senior Analytics Engineer at The Zebra</td>
-            </tr>
-            <tr>
-                <td>2016-2018</td>
-                <td>Analytics Developer at Under Armour</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h2>Professional Experience</h2>
-    <table>
-        <tbody>
-            <tr>
-                <td>Python</td>
-                <td>5 years</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>8 years</td>
-            </tr>
-        </tbody>
-    </table>
+    <header>
+        <div class="header-element-container">
+            <div class="header-text">
+                <h2>Michael Lemiale - Data Practitioner</h2>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/michael-lemiale/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/michael-lemiale" class="fa fa-github"></a>
+                <a href="https://gitlab.com/michael.lemiale" class="fa fa-gitlab"></a>
+                <a href="https://www.instagram.com/lemeoooow/" class="fa fa-instagram"></a>
+        </div>
+    </header>
+    <div class="beeg-div">
+        <div class="top-container">
+            <div>
+                <img src="./images/me.jpeg" alt="me">
+            </div>            
+            <div>
+                <h1>Hi, I'm Michael.</h1>
+            </div>
+            <div>
+                <h2>Self-professed data nerd and experienced software engineer in the data and analytics space. I’ve spent years developing efficient, well architected data warehousing enviornments.</h2>
+                <h2>My full time passion is enabling world class analytics through the data environments I have the opportunity to work on.</h2>
+                <h2>Part time, I’m a musician and PC building enthusiast.</h2>
+            </div>
+        </div>
+        <div class="middle-container">
+            <div class="divider">
+                <h1>About Me</h1>
+            </div>
+            <br><br><br>
+            <div class="zebra-container">
+                <div class="zebra-left">
+                    <h2>The Zebra</h2>
+                    <p>2018 - Current</p>
+                </div>
+                <div class="zebra-right">
+                    <p>At The Zebra, I advocated for the founding of the Analytics Engineering role as a key part of our Data & Engineering teams. My initial work implementing data-build-tool in conjunction with Snowflake as a “technical analyst” laid the groundwork for the Analytics Engineering team here.</p>
+                    <br>
+                    <p>I’ve worked tirelessly since then to continue improving the data environment here with new tools and frameworks such as Fivetran for out of the box ETL, funnel.io for API integration management and Prefect for our data refresh job orchestration.</p>
+                    <br>
+                    <p>My proudest moment yet within this data organization was partnering with our Data Engineering team to design a SQL unit testing framework alongside a regression testing framework to increase confidence in deployments and build trust in our data integrity.</p>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="ua-container">
+                <div class="ua-left">
+                    <h2>Under Armour</h2>
+                    <p>2016-2018</p>
+                </div>
+                <div class="ua-right">
+                    <p>Under Armour was foundational in my early career as a data practitioner. As an analyst on the Project 20/Twenty transition team, I partnered with SAP ERP implementation consultants to translate old data models into a new SAP HANA data environment.</p>
+                    <br>
+                    <p>This first forray into data modeling drove me to pursue more work in the data sphere as part of the core Under Armour BI team where I continued creating and maintaining data models for our Retail and E-Commerce teams.</p>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="etc-container">
+                <div class="etc-left">
+                    <h2>Etc.</h2>
+                </div>
+                <div class="etc-right">
+                    <p>Outside of work, I’m active in the local Austin, TX music scene with my brother in our band GRAIL. The rest of my time is spent reading anything I can get my hands on and attemtping self control by avoiding buying parts to upgrade a PC that has no business being upgraded again this year.</p>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="bottom-container">
+        <div class="divider">
+            <h1>Full Resume</h1>
+        </div>
+        <iframe src="./files/resume.pdf" width="100%" height=800px></iframe>
+    </div>
+    <div class="last-container">
+        <div class="divider">
+            <h1>Contact Me</h1>
+        </div>
+        <div id="fcf-form">
+            <form id="fcf-form-id" class="fcf-form-class" action="https://formsubmit.co/recaps-ducat.04@icloud.com" method="POST">
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                </div>
+                <input type="hidden" name="_next" value="https://michael-lemiale.dev/pages/thankyou.html">
+            </form>
+            </div>        
+    </div>
+    <footer>
+        <div class="header-element-container">
+            <div class="header-text">
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/michael-lemiale/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/michael-lemiale" class="fa fa-github"></a>
+                <a href="https://gitlab.com/michael.lemiale" class="fa fa-gitlab"></a>
+                <a href="https://www.instagram.com/lemeoooow/" class="fa fa-instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>
